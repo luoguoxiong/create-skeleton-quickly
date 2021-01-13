@@ -31,5 +31,11 @@
   "bugs": {
     "url": "https://github.com/Peroluo/create-skeleton-quickly/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/Peroluo/create-skeleton-quickly#readme"
 }
+=======
+  "homepage": "https://github.com/Peroluo/create-skeleton-quickly#readme",
+  "__npminstall_done": "Wed Jan 13 2021 17:46:05 GMT+0800 (GMT+08:00)"
+}
+>>>>>>> 657c981dafc170f56b8985c852231d434b1fcacd
