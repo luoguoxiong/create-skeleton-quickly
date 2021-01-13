@@ -1,0 +1,7 @@
+{
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "create-skeleton",
+  "version": "0.0.2",
+  "description": "自动生成骨架屏",
+  "main": "src/index.js",
+  "bin": {
+    "create-skeleton": "bin/index.js"
+  },
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "fast-install-puppeteer": "^1.0.5",
+    "ora": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peroluo/create-skeleton.git"
+  },
+  "keywords": [
+    "create-skeleton"
+  ],
+  "author": "luoguoxiong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peroluo/create-skeleton/issues"
+  },
+  "homepage": "https://github.com/Peroluo/create-skeleton#readme"
+}
