@@ -12,12 +12,10 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
-    "ejs": "^3.1.5",
     "fast-install-puppeteer": "^1.0.5",
     "koa": "^2.13.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
-    "koa-views": "^7.0.0",
     "open": "^7.3.1",
     "ora": "^3.0.0"
   },
