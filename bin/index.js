@@ -13,7 +13,7 @@ const currDir = process.cwd();
 function getConfig() {
   const confFile = path.resolve(currDir, conf.filename);
   if (!fs.existsSync(confFile)) {
-    return utils.log.error(`please run 'csf init' to initialize a config file`, 1);
+    return utils.log.error(`please run 'csq init' to initialize a config file`, 1);
   }
   return require(confFile);
 }
@@ -37,13 +37,13 @@ program
     const confFile = path.resolve(currDir, conf.filename);
     if (fs.existsSync(confFile)) {
       return console.log(
-        `\n[${conf.filename}] had been created! you can edit it and then run 'csf start'\n`,
+        `\n[${conf.filename}] had been created! you can edit it and then run 'csq start'\n`,
       );
     }
     fs.writeFile(path.resolve(currDir, conf.filename), conf.getTemplate(), (err) => {
       if (err) throw err;
       console.log(
-        `\n[${conf.filename}] had been created! now, you can edit it and then run 'csf start'\n`,
+        `\n[${conf.filename}] had been created! now, you can edit it and then run 'csq start'\n`,
       );
     });
   });

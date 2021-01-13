@@ -33,7 +33,6 @@ class DrawPageStructure {
 
   async start() {
     const { device, pages } = this.options;
-    console.log(device);
     log.info('启动浏览器...');
     this.browser = await ppteer({
       device: device,
