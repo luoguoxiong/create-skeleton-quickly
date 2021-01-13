@@ -1,7 +1,7 @@
 const config = {
   isAnimation: true, // 是否使用动画
   background: '#ecf0f2', // 骨架屏主题色
-  outputFilePath: './', // 输出路径，pages元素没有配置则使用这个
+  outputFilePath: './shell', // 输出路径，pages元素没有配置则使用这个
   init: () => {}, //开始生成之前的操作
   // 私人订制
   custom: (node, draw) => {
@@ -21,7 +21,6 @@ const config = {
   pages: [
     {
       url: 'https://www.baidu.com', // 网页链接
-      outputFilePath: './shell', // 输出路径
       outputFileName: 'baidu', // 输出html名称
     },
   ],

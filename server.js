@@ -36,5 +36,4 @@ function run(port) {
     open(`http://localhost:${port}`, 'chrmoe');
   });
 }
-
 module.exports = run;

@@ -1,10 +1,10 @@
 {
-  "name": "create-skeleton",
-  "version": "0.0.2",
+  "name": "create-skeleton-quickly",
+  "version": "0.0.1",
   "description": "自动生成骨架屏",
   "main": "src/index.js",
   "bin": {
-    "csf": "bin/index.js"
+    "csq": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Peroluo/create-skeleton.git"
+    "url": "git+https://github.com/Peroluo/create-skeleton-quickly.git"
   },
   "keywords": [
-    "create-skeleton"
+    "create-skeleton-quickly"
   ],
   "author": "luoguoxiong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Peroluo/create-skeleton/issues"
+    "url": "https://github.com/Peroluo/create-skeleton-quickly/issues"
   },
-  "homepage": "https://github.com/Peroluo/create-skeleton#readme"
+  "homepage": "https://github.com/Peroluo/create-skeleton-quickly#readme"
 }

@@ -33,7 +33,6 @@ class DrawPageStructure {
 
   async start() {
     const { device, pages } = this.options;
-    console.log(device);
     log.info('启动浏览器...');
     this.browser = await ppteer({
       device: device,
@@ -62,9 +61,9 @@ class DrawPageStructure {
       if (this.options.isAnimation) {
         html = `<style>@keyframes opacity{0%{opacity:1} 50%{opacity:.5} 100%{opacity:1}}</style> ${html}`;
       }
-
-      if (!(outputFilePath || this.options.outputFilePath)) {
-        res({ isComplete: true, html, url, outputFilePath, outputFileName });
+      let filepath = outputFilePath || this.options.outputFilePath;
+      if (!filepath) {
+        res({ isComplete: true, html, url, outputFilePath: '', outputFileName });
       } else {
         if (!outputFileName) {
           log.warn(`${url}缺少outputFileName!`);
@@ -72,12 +71,12 @@ class DrawPageStructure {
           return;
         }
         try {
-          fs.readdirSync(outputFilePath);
+          fs.readdirSync(filepath);
         } catch (e) {
-          fs.mkdirSync(outputFilePath);
+          fs.mkdirSync(filepath);
         }
-        fs.writeFileSync(`${outputFilePath}/${outputFileName}.html`, html);
-        res({ isComplete: true, html, url, outputFilePath, outputFileName });
+        fs.writeFileSync(`${filepath}/${outputFileName}.html`, html);
+        res({ isComplete: true, html, url, outputFilePath: filepath, outputFileName });
       }
     });
   }
