@@ -1,8 +1,8 @@
-# *create-skeleton-quickly*
+# _create-skeleton-quickly_
 
-* 快速生成网页骨架屏的可视化工具。
-* 支持同时生成多个网页的骨架屏代码。
-* 提供了便捷的CLI命令，安装即用。
+- 快速生成网页骨架屏的可视化工具。
+- 支持同时生成多个网页的骨架屏代码。
+- 提供了便捷的 CLI 命令，安装即用。
 
 ### QuickStart
 
@@ -10,15 +10,15 @@
 npm i create-skeleton-quickly -g
 ```
 
-* 方法一：打开可视化界面
+- 方法一：打开可视化界面
 
 ```shell
 csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 ```
 
-<img src="/Users/peroluo/github/structure/img/look.gif" style="zoom: 25%;" />
+<img src="./img/look.gif" style="zoom: 25%;" />
 
-* 方法二：配置文件生成骨架屏代码
+- 方法二：配置文件生成骨架屏代码
 
   1. 生成配置文件
 
@@ -32,7 +32,7 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
   csq start // 开始生成骨架屏代码
   ```
 
-### 关于skeleton.config.js
+### 关于 skeleton.config.js
 
 |      参数      |          说明          | 参数类型 | 是否必填 | 默认值  |
 | :------------: | :--------------------: | :------: | :------: | :-----: |
@@ -44,13 +44,12 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 |     custom     |      自定义骨架屏      |   Fuc    |    否    |   Fuc   |
 |     pages      |  生成骨架屏页面的配置  |  Array   |    是    |   无    |
 
-#### pages参数说明
+#### pages 参数说明
 
-|      参数      |      说明      | 数据类型 | 是否必填 | 默认值 |
-| :------------: | :------------: | :------: | :------: | :----: |
-|      url       |    网页地址    |  String  |    是    |   无   |
-| outputFileName | 输出的html名称 |  String  |    是    |   无   |
-| outputFilePath | 输出的路径地址 |  String  |    否    |   无   |
+|      参数      |       说明       | 数据类型 | 是否必填 | 默认值 |
+| :------------: | :--------------: | :------: | :------: | :----: |
+|      url       |     网页地址     |  String  |    是    |   无   |
+| outputFileName | 输出的 html 名称 |  String  |    是    |   无   |
+| outputFilePath |  输出的路径地址  |  String  |    否    |   无   |
 
-> 如果pages的元素没有设置outputFilePath，会使用公共的输出路径outputFilePath
-
+> 如果 pages 的元素没有设置 outputFilePath，会使用公共的输出路径 outputFilePath
