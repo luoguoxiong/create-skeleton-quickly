@@ -16,7 +16,7 @@ npm i create-skeleton-quickly -g
 csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 ```
 
-<img src="./img/look.gif" style="zoom: 25%;" />
+<img src="./img/min.gif" style="zoom: 100%;" />
 
 - 方法二：配置文件生成骨架屏代码
 
@@ -30,6 +30,26 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 
   ```shell
   csq start // 开始生成骨架屏代码
+  ```
+  
+- 方法三：提供了扩展方法
+
+  ```shell
+  const DrawPageStructure = require('create-skeleton-quickly');
+  
+  new DrawPageStructure({
+      isAnimation: true,
+      background: '#ecf0f2',
+      pages: [
+          {
+              url: 'https://www.baidu.com',
+          },
+      ],
+  })
+      .start()
+      .then(res => {
+          console.log(res);
+      });
   ```
 
 ### 关于 skeleton.config.js
