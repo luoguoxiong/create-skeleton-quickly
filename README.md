@@ -31,12 +31,12 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
   ```shell
   csq start // 开始生成骨架屏代码
   ```
-  
+
 - 方法三：提供了扩展方法
 
   ```shell
   const DrawPageStructure = require('create-skeleton-quickly');
-  
+
   new DrawPageStructure({
       isAnimation: true,
       background: '#ecf0f2',
@@ -69,7 +69,7 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 |      参数      |       说明       | 数据类型 | 是否必填 | 默认值 |
 | :------------: | :--------------: | :------: | :------: | :----: |
 |      url       |     网页地址     |  String  |    是    |   无   |
-| outputFileName | 输出的 html 名称 |  String  |    是    |   无   |
+| outputFileName | 输出的 html 名称 |  String  |    否    |   无   |
 | outputFilePath |  输出的路径地址  |  String  |    否    |   无   |
 
 > 如果 pages 的元素没有设置 outputFilePath，会使用公共的输出路径 outputFilePath

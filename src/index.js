@@ -67,7 +67,7 @@ class DrawPageStructure {
       } else {
         if (!outputFileName) {
           log.warn(`${url}缺少outputFileName!`);
-          res({ isComplete: false });
+          res({ isComplete: true, html, url, outputFilePath: filepath, outputFileName: '' });
           return;
         }
         try {
