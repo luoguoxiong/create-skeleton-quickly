@@ -1,6 +1,6 @@
 {
   "name": "create-skeleton-quickly",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "自动生成骨架屏",
   "main": "src/index.js",
   "bin": {
