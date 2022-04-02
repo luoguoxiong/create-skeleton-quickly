@@ -1,4 +1,4 @@
-const ppteer = require('fast-install-puppeteer');
+const ppteer = require('@all-in-js/fast-install-puppeteer');
 const { log } = require('./utils');
 
 const devices = {
