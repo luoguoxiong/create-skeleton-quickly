@@ -1,6 +1,6 @@
 {
   "name": "@tools-list/create-skeleton-quickly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "自动生成骨架屏",
   "main": "src/index.js",
   "bin": {
@@ -12,12 +12,12 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.18.0",
-    "@all-in-js/fast-install-puppeteer": "^1.0.0",
     "koa": "^2.13.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "open": "^7.3.1",
-    "ora": "^3.0.0"
+    "ora": "^3.0.0",
+    "puppeteer": "^13.5.2"
   },
   "repository": {
     "type": "git",

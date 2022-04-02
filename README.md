@@ -7,7 +7,7 @@
 ### QuickStart
 
 ```shell
-npm i create-skeleton-quickly -g
+npm i @tools-list/create-skeleton-quickly -g
 ```
 
 - 方法一：打开可视化界面
@@ -35,7 +35,7 @@ csq run 5000 //谷歌会自动打开，其他浏览器需要手动
 - 方法三：提供了扩展方法
 
   ```shell
-  const DrawPageStructure = require('create-skeleton-quickly');
+  const DrawPageStructure = require('@tools-list/create-skeleton-quickly');
 
   new DrawPageStructure({
       isAnimation: true,
